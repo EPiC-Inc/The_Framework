@@ -1,5 +1,6 @@
 import random
 def randomize(list_of_names):
+    ''' Returns a dict of names such that randomize(list)[name] = name's target '''
     final = {}
     random.shuffle(list_of_names)
     for name in list_of_names:
