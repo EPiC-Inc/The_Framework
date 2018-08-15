@@ -10,5 +10,13 @@ socketio = SocketIO(app)
 def index():
    return render_template("index.html")
 
+@app.route('/<filename>')
+def return_html(filename):
+    return render_template(filename)
+
+@app.errorhandler(500)
+def handler(e):
+    return render_template('500.html').format(e)
+
 if __name__ == '__main__':
    app.run()
