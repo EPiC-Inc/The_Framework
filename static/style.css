@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+* {
+}
+
+a {
+  transition-duration:0.4s;
+  color:cyan;
+}
+
+a:hover {
+  color:black;
+  background:cyan;
+}
+
+body {
+  background:black;
+  color:darkgrey;
+  font:16px Roboto Mono, monospace;
+}
+
+button {
+  background:cyan;
+  color:black;
+  border:3px outset darkcyan;
+  font:32px Roboto Mono, monospace;
+  transition-duration:0.4s;
+}
+
+button:hover {
+  background:darkcyan;
+  color:cyan;
+  border:3px inset darkcyan;
+}
+
+.center {
+  text-align:center;
+}
+
+div.center {
+  margin: 0 auto;
+  width: 80em;
+}
+
+.title {
+  text-align:center;
+  font-size:64px;
+}
