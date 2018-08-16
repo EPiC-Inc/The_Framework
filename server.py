@@ -1,3 +1,4 @@
+#imports
 from flask import Flask, render_template
 from flask_socketio import SocketIO, send, emit
 # For PyInstaller:
@@ -6,7 +7,8 @@ import asyncio, engineio.async_threading, jinja2
 app = Flask(__name__)
 socketio = SocketIO(app)
 
-@app.route("/")
+#routing
+@app.route("/") #home
 def index():
    return render_template("index.html")
 
@@ -20,3 +22,5 @@ def handler(e):
 
 if __name__ == '__main__':
    app.run()
+
+# This is so much easier in Python than NodeJS

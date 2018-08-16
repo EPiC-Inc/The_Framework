@@ -14,6 +14,11 @@
   <div class='center' id='buttons'>
     <button onclick='login();'>Login</button>
   </div>
+
+  <div class='center' id='login_div' hidden>
+    Username:<br><input type="text"></input><br><br>
+    Password:<br><input type="password"></input>
+  </div>
 </body>
 
 <script src='{{ url_for('static', filename='index.js') }}'></script>
