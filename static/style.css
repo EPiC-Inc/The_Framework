@@ -41,11 +41,11 @@ div.center {
   width: 80em;
 }
 
-#login_div {
-  transition: visibility 0s linear 0.4s, opacity 0.4s linear;
-}
-
 .title {
   text-align:center;
   font-size:64px;
+}
+
+.vis_animation {
+  transition:visibility 0s linear 0.5s,opacity 0.5s linear;
 }

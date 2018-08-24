@@ -12,15 +12,18 @@
   <p class="title">The_Framework</p>
 
   <div class='center' id='buttons'>
-    <button onclick='login();'>Login</button>
+    <button onclick='show_login();' id='show_login_button'  class='vis_animation' style="opacity:1;">Login</button>
   </div>
 
-  <div class='center' id='login_div' hidden>
-    Username:<br><input type="text" /><br><br>
-    Password:<br><input type="password" />
-  </div><br><br>
+  <div class='center vis_animation' id='login_div' style="opacity:0;">
+    <form onsubmit="return false;">
+      Username:<br><input type="text" id='userbox' /><br><br>
+      Password:<br><input type="password" id='pwdbox' /><br><br>
+      <button onclick="login()">Log In</button>
+    </form>
+  </div><br>
 
-  <!--<p class='center'>If you don't know what Assassin is, <a href="https://en.wikipedia.org/wiki/Assassin_(game)" target="_blank">go here.</a></p>-->
+  <p class='center'><a href="https://en.wikipedia.org/wiki/Assassin_(game)" target="_blank">What is this for?</a></p>
 </body>
 
 <script src="{{ url_for('static', filename='index.js') }}"></script>
